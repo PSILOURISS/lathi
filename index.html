@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Διαχείρηση Λαθών</title>
+  <style>
+  #myerror{
+  color:orange;
+  font-size:22px;
+  border :1px solid gray;
+  padding:2px;
+  margin:10px;
+  width:250px;
+  }
+  </style>
+</head>
+<body>
+<h2>Διαχείριση λαθων</h2>
+<p>Παραδειγμα χρησης των εντολων try και catch</p>
+<p id= "myerror"></p>
+<script>
+try{
+allert("παραδειγμα λαθων");
+}
+catch (err){
+var myer=document.querySelector("#myerror");
+myer.innerHTML=err.message;
+
+}
+</script>
+</body>
+</html>
